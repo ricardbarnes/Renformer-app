@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="erdari.renformer_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="erdari.renformer_android.ui.user.budget.BudgetListActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.budget.BudgetDetailActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.admin.reformtype.ReformTypeEditActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.admin.reformtype.ReformTypeCreateActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.reformtype.ReformTypeListActivity" />
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.attribute.option.OptionCreateActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.admin.attribute.AttributeCreateActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.admin.category.CategoryCreateActivity" />
+        <activity
+            android:name="erdari.renformer_android.ui.user.ReformTypeViewListActivity"
+            android:label="@string/title_reformtypeview_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="erdari.renformer_android.ui.user.ReformTypeViewDetailActivity"
+            android:label="@string/title_reformtypeview_detail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.ReformTypeViewListActivity" />
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.reformtype.ReformTypeDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.reformtype.ReformTypeListActivity" />
+        </activity>
+        <activity
+            android:name="erdari.renformer_android.ui.user.admin.reformtype.ReformTypeListActivity"
+            android:label="@string/title_reformtype_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.AdminActivity" />
+        </activity>
+        <activity
+            android:name="erdari.renformer_android.ui.user.admin.user.UserManagementActivity"
+            android:label="@string/title_activity_user_list_new"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.AdminActivity" />
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.user.UserCreateActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.customer.CustomerActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.UserEditActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.AdminActivity" />
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.AdminActivity" />
+        <activity android:name="erdari.renformer_android.ui.user.admin.user.UserEditRoleActivity" />
+        <activity android:name="erdari.renformer_android.ui.register.RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.login.LoginActivity" />
+        </activity>
+        <activity
+            android:name="erdari.renformer_android.ui.login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.category.CategoryEditActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.reformtype.ReformTypeDetailActivity" />
+        </activity>
+        <activity
+            android:name="erdari.renformer_android.ui.user.admin.attribute.AttributeEditActivity"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="erdari.renformer_android.erdari.renformer_android.ui.user.admin.reformtype.ReformTypeDetailActivity" />
+        </activity>
+        <activity android:name="erdari.renformer_android.ui.user.admin.attribute.option.OptionEditActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
